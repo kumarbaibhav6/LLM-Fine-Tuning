@@ -1,0 +1,30 @@
+# Data files (too large for GitHub)
+*.json
+*.csv
+*.parquet
+
+# Model weights and checkpoints
+cuad-qlora-adapter/
+cuad-qlora-checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow
+mlruns/
+
+# OS
+.DS_Store
+Thumbs.db
