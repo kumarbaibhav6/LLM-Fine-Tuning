@@ -114,4 +114,4 @@ CONFIG = {
 ## Author
 
 **Kumar Baibhav**
-[LinkedIn](https://linkedin.com/in/kumar-baibhav) · [HuggingFace](https://huggingface.co/kumar-baibhav)
+[LinkedIn](https://www.linkedin.com/in/kumarbaibhav66) · [HuggingFace](https://huggingface.co/kumar-baibhav)
