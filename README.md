@@ -4,8 +4,7 @@ Fine-tuning **Llama-3.2-3B-Instruct** on legal contract question answering using
 
 ## Results
 
-> Trained for **1 epoch** on a free T4 GPU. Loss dropped from **1.97 → 0.26**.
-> With 3 epochs, ROUGE-L is projected to reach **0.35–0.50**.
+Measured after **1 epoch** of QLoRA training on a free Colab T4 GPU. Training loss dropped from **1.97 → 0.26**.
 
 | System | ROUGE-L | Token F1 | BERTScore F1 |
 |---|---|---|---|
@@ -13,7 +12,9 @@ Fine-tuning **Llama-3.2-3B-Instruct** on legal contract question answering using
 | RAG Baseline | 0.0711 | 0.1054 | 0.6435 |
 | **QLoRA Fine-tuned** | **0.1100** | **0.1374** | **0.6955** |
 
-**QLoRA outperforms RAG on every metric** — even after just 1 epoch.
+**QLoRA beats both the base model and the RAG baseline on every metric — after a single epoch.** The absolute scores are modest (CUAD is a hard extractive-QA task and this is one epoch on free hardware), but the relative ordering is the takeaway: a small amount of task-specific fine-tuning outperforms retrieval alone.
+
+> **Headroom:** training loss was still falling at the end of epoch 1, so additional epochs should improve these numbers further. That run is future work — the table above reports only measured results.
 
 ## The Key Insight
 
